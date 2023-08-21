@@ -5,6 +5,7 @@
 <ChildEventProp @increase-one="increaseByone" @increased-value="IncreasedValue"/>
 </template>
 
+<!-- composition Api
 <script setup>
 import { ref } from 'vue'
 
@@ -19,5 +20,31 @@ count.value++
 function IncreasedValue(value){
     // console.log(value)
     inputFieldValue.value=value
+}
+</script>
+-->
+
+<!-- Optional Api-->
+<script>
+import ChildEventProp from './ChildEventProp.vue';
+export default {
+    data() {
+    return {
+        count : 0,
+        inputFieldValue:0,
+    }
+},
+methods: {
+    increaseByone () {
+            this.count++
+        },
+        IncreasedValue(value){
+            console.log('ss')
+       this.inputFieldValue=value
+        }
+    },
+    components:{
+        ChildEventProp
+    }
 }
 </script>

@@ -7,6 +7,7 @@
 <input type="number" name="" id="" v-model="number" @keyup="$emit('increasedValue',number)">
 </div>
 </template>
+<!-- composition Api
 <script setup>
 import { ref } from "vue";
 
@@ -14,7 +15,19 @@ let emit=defineEmits(["increaseOne","increasedValue"])
 function Increase(){
     emit('increaseOne')
 }
-
-
 let number = ref(0);
+</script>
+-->
+
+<!-- Optional Api-->
+
+<script>
+export default {
+    emits: ['increaseOne','increasedValue'],
+    methods:{
+        Increase(){
+            this.$emit("increaseOne")
+        }
+    }
+}
 </script>
