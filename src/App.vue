@@ -4,6 +4,8 @@ import ComputeProp from './components/ComputeProp.vue';
 import WatchProp from './components/WatchProp.vue';
 import RefProp from './components/RefProp.vue';
 import Props from './components/Props.vue';
+import EventProp from './components/EventProp.vue';
+
 
 </script>
 
@@ -12,7 +14,8 @@ import Props from './components/Props.vue';
  <!-- <ComputeProp/> -->
  <!-- <WatchProp/>-->
  <!-- <RefProp /> -->
- <Props/>
+ <!-- <Props/> -->
+ <EventProp/>
 </template>
 
 
