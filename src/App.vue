@@ -5,7 +5,8 @@ import WatchProp from './components/WatchProp.vue';
 import RefProp from './components/RefProp.vue';
 import Props from './components/Props.vue';
 import EventProp from './components/EventProp.vue';
-
+import AsyncComponentVue from './components/AsyncComponent.vue';
+import ReusableComponent from './components/ReusableComponent.vue';
 
 </script>
 
@@ -15,7 +16,10 @@ import EventProp from './components/EventProp.vue';
  <!-- <WatchProp/>-->
  <!-- <RefProp /> -->
  <!-- <Props/> -->
- <EventProp/>
+ <!-- <EventProp/> -->
+ <!-- <AsyncComponentVue/> -->
+<ReusableComponent/>
+
 </template>
 
 
