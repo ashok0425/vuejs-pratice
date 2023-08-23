@@ -7,6 +7,7 @@ import Props from './components/Props.vue';
 import EventProp from './components/EventProp.vue';
 import AsyncComponentVue from './components/AsyncComponent.vue';
 import ReusableComponent from './components/ReusableComponent.vue';
+import CustomD from './components/CustomD.vue';
 
 </script>
 
@@ -18,8 +19,8 @@ import ReusableComponent from './components/ReusableComponent.vue';
  <!-- <Props/> -->
  <!-- <EventProp/> -->
  <!-- <AsyncComponentVue/> -->
-<ReusableComponent/>
-
+<!-- <ReusableComponent/> -->
+<CustomD/>
 </template>
 
 
